@@ -1,7 +1,9 @@
 import { Octokit } from "@octokit/rest";
 
+// const octokit = new Octokit()
+
 const octokit = new Octokit({
-  auth: "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",
+  auth: "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",
 });
 
 export async function fetchUserData(userName) {
@@ -25,3 +27,4 @@ export async function fetchRepoLanguages(userName, repo) {
 })
   return data
 }
+
