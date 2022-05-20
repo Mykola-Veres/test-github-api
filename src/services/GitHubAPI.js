@@ -1,7 +1,10 @@
 import { Octokit } from "@octokit/rest";
 
-const octokit = new Octokit()
+// const octokit = new Octokit()
 
+const octokit = new Octokit({
+  auth: "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",
+});
 
 
 export async function fetchUserData(userName) {
